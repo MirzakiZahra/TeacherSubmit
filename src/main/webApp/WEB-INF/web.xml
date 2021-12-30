@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <servlet>
+        <servlet-name>salamservelet</servlet-name>
+        <servlet-class>Salamservelet</servlet-class>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>value1</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>salamservelet</servlet-name>
+        <url-pattern>/salam</url-pattern>
+    </servlet-mapping>
+   <servlet>
+       <servlet-name>nnnn</servlet-name>
+       <servlet-class>FirstHttpService</servlet-class>
+       
+   </servlet>
+    <servlet-mapping>
+        <servlet-name>nnnn</servlet-name>
+        <url-pattern>/bye</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>mmmm</servlet-name>
+        <servlet-class>ErroeServlet</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mmmm</servlet-name>
+        <url-pattern>/eror</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Student</servlet-name>
+        <servlet-class>Student</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Student</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>teacher</servlet-name>
+        <servlet-class>TeacherServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>well</servlet-name>
+        <servlet-class>Well</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>well</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+</web-app>
